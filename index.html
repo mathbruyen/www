@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/normalize-1.1.3.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/leaflet-0.7.2.css" />
+  </head>
+  <body>
+    <h2>Hello!</h2>
+    <h1>Mathieu <img src="img/mathieu.jpeg" alt="" /> Bruyen</h1>
+    <h3>what I say</h3>
+    <ul>
+      <li><a href="https://github.com/mathbruyen"><img src="img/octocat.png" alt="" /> github</a></li>
+      <li><a href="https://twitter.com/mathbruyen"><img src="img/twitter.png" alt="" />twitter</a></li>
+      <li><a href="http://blog.mais-h.eu/">blog</a></li>
+    </ul>
+    <h3>what I like</h3>
+    <ul>
+      <li>open source</li>
+      <li>DIY</li>
+      <li>software engineering</li>
+      <li>many more ;)</li>
+    </ul>
+    <figure>
+      <figcaption><h3>where I live</h3></figcaption>
+      <div id="map"></div>
+    </figure>
+
+    <script src="js/vendor/leaflet-0.7.2.min.js"></script>
+    <script>
+      (function () {
+        var map = L.map('map').setView([43.6198, 7.0613], 7);
+        L.tileLayer('http://otile2.mqcdn.com/tiles/1.0.0/map/{z}/{x}/{y}.png', { attribution: 'Tiles Courtesy of <a href="http://www.mapquest.com/" target="_blank">MapQuest</a> <img src="http://developer.mapquest.com/content/osm/mq_logo.png">', maxZoom: 18 }).addTo(map);
+      })();
+    </script>
+  </body>
+</html>

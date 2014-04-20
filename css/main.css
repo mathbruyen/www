@@ -1,0 +1,70 @@
+/* --GENERAL */
+@import url(http://fonts.googleapis.com/css?family=Lato:300);
+html {
+  text-align: center;
+  background-color: #22A7F0;
+  font-family: 'Lato', sans-serif;
+}
+body {
+  max-width: 50em;
+  margin: 0 auto;
+}
+
+/** --HEAD */
+h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+h1 img {
+  margin: 0 0.5em;
+  width: 4em;
+  height: 4em;
+  border-radius: 2em;
+}
+@media screen and (max-width: 30em) {
+  h1 {
+    flex-direction: column;
+  }
+}
+
+/* --MAP */
+#map {  
+  height: 30em;
+}
+
+/* --LIST */
+ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  flex: 1;
+  margin: 0 3px;
+  padding: 1.5em 0;
+}
+li:nth-child(2n) {
+  background-color: #00B16A;
+}
+li:nth-child(2n+1) {
+  background-color: #BF55EC;
+}
+li img {
+  height: 1em;
+  margin-right: 5px;
+}
+a {
+  display: inline-block;
+  width: 100%;
+  text-decoration: none;
+}
+@media screen and (max-width: 40em) {
+  ul {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  li {
+    padding: 0.7em 0;
+  }
+}
